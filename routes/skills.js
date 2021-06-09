@@ -9,12 +9,10 @@ const skillsCtrl = require('../controllers/skills');
 
 
 router.get('/', skillsCtrl.index);
+router.get('/', skillsCtrl.new);
 router.get('/:id', skillsCtrl.show);
 
-// you can create mulitple routers - localhost:3000/skills/today
-router.get('/today', function(req, res){
-    res.send('Todays Skill Resource');
-});
+
 
 
 module.exports = router;
