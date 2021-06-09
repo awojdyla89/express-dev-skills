@@ -9,10 +9,11 @@
 <body>
     <h1>New Skill</h1>
      <!-- 'method=' is the CRUD verb and 
-        'action=' is the endpoint request (where the new skill will render) -->
+        'action=' is the endpoint request (where the new skill will render localhost:3000/skills/new) -->
   <form action="/skills" method="POST" autocomplete="off">
+    <!-- The properties on req.body will always match the values of the <input>'s name attributes: -->
     <input type="text" name="skill">
-    <button type="submit">Save Todo</button>
+    <button type="submit">Save My Skill</button>
   </form>
 </body>
 </html>
