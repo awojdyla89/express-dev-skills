@@ -1,7 +1,7 @@
-// This is the endpoint, this is what the users browser calls like localhost:3000/skills
-// we call in (require) the logic from the controllers
-// the server gets the endpoint and spits out something from the controller back to the browser
 
+// These are the routes. 
+// The routes callnack function is in the controller
+// Based on the type of route a different function is performed
 
 let express = require('express');
 let router = express.Router();
@@ -14,13 +14,9 @@ router.get('/:id', skillsCtrl.show);
 router.post('/', skillsCtrl.create);
 router.delete('/:id', skillsCtrl.delete);
 
-
-
 module.exports = router;
 
-
-
-//------------
+//-----MVC FLOW------------
 // From the browser endpoint (localhost:3000/skills)
 // It looks through the server.js file
 // Finds the router being requested (endpoint) (app.use('/skills', skillsRouter))

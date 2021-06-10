@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <h1>Mad Skill</h1>
+    <h1>Mad Skill - Index</h1>
 
     <a href="/skills/new"> Add New Skill</a>
     <ul>
       <% skills.forEach(function(sk) { %>
         <li>
 
-          <form action="/skills/<%= sk.id %>?_method=DELETE" class="delete-form" method="POST">
+          <!-- <form action="/skills/< sk.id >?_method=DELETE" class="delete-form" method="POST">
             <button type="submit">X</button>
-          </form>
+          </form> -->
 
 
           <a href="/skills/<%=sk.id%> ">
           <%= sk.skill  %>
         </a>
             - 
-          <%= sk.accomplished ? 'true' : 'not true' %>
+          <%= sk.accomplished ? 'Master' : 'Novice' %>
         </li>
       <% }); %>
     </ul>
