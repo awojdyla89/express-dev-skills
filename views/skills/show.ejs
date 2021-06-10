@@ -8,7 +8,7 @@
     <title>Express Skills</title>
 </head>
 <body>
-    <h1>Mad Skill - Show</h1>
+    <h1> Show Skill</h1>
 
     <h2>Skill #<%= skill.id %></h2>
     <!-- skill. is the variable is defined in controllers show() function -->
@@ -17,7 +17,7 @@
 
 
     <!-- 'method=' is the CRUD verb and 
-        'action=' is the endpoint request (where the new delete will render localhost:3000/skills/new) -->
+        'action=' is the endpoint request (where the new delete will render localhost:3000/skills) -->
     
         <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST">
             <button type="submit">Delete Skill</button>
