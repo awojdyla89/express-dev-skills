@@ -15,13 +15,9 @@
       <% skills.forEach(function(sk) { %>
         <li>
 
-          <!-- <form action="/skills/< sk.id >?_method=DELETE" class="delete-form" method="POST">
-            <button type="submit">X</button>
-          </form> -->
-
-
           <a href="/skills/<%=sk.id%> ">
           <%= sk.skill  %>
+          
         </a>
             - 
           <%= sk.accomplished ? 'Master' : 'Novice' %>
